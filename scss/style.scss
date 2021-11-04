@@ -259,7 +259,7 @@ display:flex;
 	display: flex;
 }
 .project-feedback {
-	padding-right:96px;
+	padding-right:126px;
 	&:nth-child(2){
 		padding: 0px;
 		padding-left:96px;
@@ -615,5 +615,70 @@ max-width: 475px;
 }
 
 @media (max-width: 375px){
-	
+	.hero {
+			&__title {
+				font-size: 30px;
+				line-height: 44px;
+			}
+	}
+	.companies img {
+		width:50%;
+		height: 50%;
+		padding:5px;
+	}
+	.companies{
+		justify-content: space-around;
+		padding: 10px;
+	}
+
+		.strategy-block {
+				&__subtitle {
+					font-size: 12px;
+					line-height: 16px;
+				}
+		
+				&__title {
+					font-size: 24px;
+					line-height: 30px;
+				}
+		
+				&__descr {
+					font-size: 14px;
+					line-height: 24px;
+				}
+		
+				&__link {
+					text-indent: 0px;
+  					font-size: 14px;
+				}
+		}
+		.strategy-comment {
+			margin-left:20px;
+			padding: 0 20px;
+				&__descr {
+					font-size: 16px;
+					line-height: 30px;
+				}
+		}
+		.strategy-human {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+				&__icon {
+					width: 50px;
+					height: 50px;
+					margin-top:15px;
+					margin-right: 15px;
+				}
+				&__name {
+					margin-top:15px;
+					font-size: 16px;
+					line-height: 20px;
+					margin-left:15px;
+				}
+				&__name span{
+					font-size: 12px;
+					line-height: 20px;
+				}
+		}
 }
